@@ -32,10 +32,13 @@
     nav.innerHTML = professions.map(prof => {
       const available=prof.status==="published";
       return `<button class="profession-btn" type="button" data-profession="${e(prof.id)}" ${available ? "" : "disabled aria-disabled=\"true\""} ${prof.id===active.id ? 'aria-current="page"' : ""}>
-        <span class="profession-btn__icon" aria-hidden="true">${e(prof.symbol)}</span>
-        <span><span class="profession-btn__name">${e(prof.name)}</span><span class="profession-btn__state">${e(prof.statusLabel)}</span></span>
+        <span class="profession-btn__icon" aria-hidden="true">${prof.icon ? `<img class="profession-btn__art" src="${e(prof.icon)}" alt="" width="39" height="39" loading="lazy">` : e(prof.symbol)}</span>
+        <span class="profession-btn__copy"><span class="profession-btn__name">${e(prof.name)}</span><span class="profession-btn__state ${available ? "profession-btn__state--ready" : "profession-btn__state--pending"}">${e(prof.statusLabel)}</span></span>
       </button>`;
-    }).join("");
+    }).join("") + `<div class="profession-index" aria-label="Stan przygotowania kroniki">
+      <span>✦ ${professions.filter(prof => prof.status === "published").length} opisane</span>
+      <span>${professions.filter(prof => prof.status !== "published").length} w trakcie prac ✦</span>
+    </div>`;
     nav.querySelectorAll(".profession-btn:not([disabled])").forEach(button=>{
       button.addEventListener("click",()=>{
         const target=professions.find(p=>p.id===button.dataset.profession);
