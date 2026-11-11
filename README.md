@@ -4,7 +4,9 @@ Publiczny, **tylko do odczytu** panel profesji, inspirowany wizualnie średniowi
 
 ## Otwórz stronę
 
-**Adres docelowy:** https://hogcraft2-cpu.github.io/kronika-zawodow/
+**Adres GitHub Pages:** https://hogcraft2-cpu.github.io/kronika-zawodow/
+
+**Adres Cloudflare Pages (po wdrożeniu projektu):** https://kronika-zawodow.pages.dev/
 
 ## Uruchomienie GitHub Pages (ważne!)
 
@@ -23,7 +25,8 @@ Wybór źródła **GitHub Actions** jest istotny dla dołączonego workflow. Je�
 - Gracze mogą przeglądać dostępne profesje z menu po lewej.
 - Aktualnie opracowany jest **Kowal**: XP, surowce, narzędzia, stanowisko pracy, naprawy oraz FAQ.
 - FAQ ma wyszukiwarkę, a menu umożliwia przechodzenie między rozdziałami.
-- Kolejne zawody są widoczne jako **W przygotowaniu**.
+- Pozostałe profesje: **Zielarz, Kusznik, Karczmarz, Złotnik, Płatnerz** — wszystkie oznaczone **W trakcie prac**.
+- Każdy zawód ma własną ikonę SVG w średniowiecznym stylu; wygląd panelu nawiązuje do księgi cechowej.
 - Nie ma panelu administratora, logowania, zapisywania zmian, przycisków edycji ani formularzy dodawania treści.
 
 ## Struktura projektu
@@ -35,6 +38,7 @@ app.js                         wyświetlanie danych, nawigacja i FAQ
 data/professions.js            treści opisów zawodów (źródło danych)
 assets/crest.svg               autorski herb
 assets/kowal-rycina.svg        autorska grafika kowala
+assets/icons/*.svg            autorskie ilustracje sześciu zawodów
 .nojekyll                      pominięcie przetwarzania Jekyll
 .github/workflows/deploy-pages.yml  publikacja w GitHub Actions
 ```
