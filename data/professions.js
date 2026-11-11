@@ -9,6 +9,7 @@ window.KRONIKA_PROFESSIONS = [
     id: "kowal",
     name: "Kowal",
     symbol: "⚒",
+    icon: "assets/icons/kowal.svg",
     category: "Rzemiosło",
     status: "published",
     statusLabel: "Dostępny poradnik",
@@ -122,7 +123,9 @@ window.KRONIKA_PROFESSIONS = [
       { q: "Gdzie można naprawiać przedmioty innych graczy?", a: "Kowal może świadczyć usługi naprawcze przy specjalnych stacjach napraw, które znajdują się w miastach." }
     ]
   },
-  { id: "zielarz", name: "Zielarz", symbol: "❧", category: "Zbieractwo", status: "coming", statusLabel: "W przygotowaniu" },
-  { id: "ciesla", name: "Cieśla", symbol: "🪓", category: "Rzemiosło", status: "coming", statusLabel: "W przygotowaniu" },
-  { id: "piekarz", name: "Piekarz", symbol: "♨", category: "Rzemiosło", status: "coming", statusLabel: "W przygotowaniu" }
+  { id: "zielarz", name: "Zielarz", symbol: "❧", icon: "assets/icons/zielarz.svg", category: "Zbieractwo", status: "coming", statusLabel: "W trakcie prac" },
+  { id: "kusznik", name: "Kusznik", symbol: "⚔", icon: "assets/icons/kusznik.svg", category: "Rzemiosło", status: "coming", statusLabel: "W trakcie prac" },
+  { id: "karczmarz", name: "Karczmarz", symbol: "♨", icon: "assets/icons/karczmarz.svg", category: "Usługi", status: "coming", statusLabel: "W trakcie prac" },
+  { id: "zlotnik", name: "Złotnik", symbol: "✧", icon: "assets/icons/zlotnik.svg", category: "Rzemiosło", status: "coming", statusLabel: "W trakcie prac" },
+  { id: "platnerz", name: "Płatnerz", symbol: "⬡", icon: "assets/icons/platnerz.svg", category: "Rzemiosło", status: "coming", statusLabel: "W trakcie prac" }
 ];
