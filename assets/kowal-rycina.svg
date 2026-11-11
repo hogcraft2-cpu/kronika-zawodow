@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 550" role="img" aria-label="Średniowieczna rycina przedstawiająca kowadło i narzędzia">
+<defs>
+ <radialGradient id="glow"><stop offset="0" stop-color="#ce7441" stop-opacity=".68"/><stop offset=".55" stop-color="#865333" stop-opacity=".24"/><stop offset="1" stop-color="#261e16" stop-opacity="0"/></radialGradient>
+ <linearGradient id="metal" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#e8c28c"/><stop offset=".25" stop-color="#ad7d4b"/><stop offset=".7" stop-color="#624632"/><stop offset="1" stop-color="#cf9e61"/></linearGradient>
+ <linearGradient id="edge" x1="0" x2="1"><stop stop-color="#c8a16d"/><stop offset=".5" stop-color="#e1b77c"/><stop offset="1" stop-color="#6c492e"/></linearGradient>
+ <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency=".06" numOctaves="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="1.1"/></filter>
+</defs>
+<circle cx="348" cy="282" r="245" fill="url(#glow)"/>
+<g opacity=".40" fill="none" stroke="#c79962">
+ <circle cx="348" cy="264" r="222" stroke-width="1.8"/>
+ <circle cx="348" cy="264" r="204" stroke-width=".7" stroke-dasharray="4 9"/>
+ <circle cx="348" cy="264" r="185" stroke-width="1.1"/>
+ <path d="M348 42v33m0 374v33M126 264h32m380 0h32" stroke-width="3"/>
+ <path d="M192 108l17 17m280 280 17 17m0-314-17 17M192 422l17-17"/>
+</g>
+<g stroke="#aa7347" stroke-width="2" fill="none" opacity=".47">
+ <path d="M160 182q45-42 68-45M166 362q30 50 70 70M468 133q51 23 75 67M472 424q49-25 68-69"/>
+ <path d="M130 264q-18-16 0-32m440 32q18 16 0 32M348 27q-16-18-32 0m32 472q16 18 32 0"/>
+</g>
+<!-- forge embers -->
+<g stroke="#f2b46f" fill="#f4b66e" stroke-linecap="round" opacity=".9">
+ <circle cx="231" cy="251" r="2"/><circle cx="441" cy="311" r="3"/><circle cx="314" cy="154" r="2"/>
+ <path d="M281 203l-8-13M401 220l13-16M471 257l12-5M264 357l-10 12" stroke-width="3"/>
+ <path d="M432 178l-6-15M228 301l-13-5M384 129l2-12" stroke-width="2"/>
+</g>
+<!-- hammer diagonally resting behind anvil -->
+<g transform="rotate(-35 360 267)" stroke="#32231a" stroke-linejoin="round">
+ <path d="M343 105h24v285h-24z" fill="#946d46" stroke-width="5"/>
+ <path d="M332 90h45v26h-45z" fill="#a68257" stroke-width="5"/>
+ <path d="M291 105h136v55l-22 15h-90l-24-18z" fill="url(#metal)" stroke="#2e241b" stroke-width="6"/>
+ <path d="M294 111h130M316 161h88" fill="none" stroke="#ebc68c" stroke-opacity=".6" stroke-width="3"/>
+</g>
+<!-- tongs leaning from opposite side -->
+<g transform="rotate(26 465 300)" fill="none" stroke="#c3915e" stroke-linecap="round">
+ <path d="M444 118q0 20 9 43l22 75-37 169" stroke-width="10"/>
+ <path d="M474 117q-7 22-13 46l-18 74 41 162" stroke-width="10"/>
+ <circle cx="459" cy="247" r="11" fill="#734832" stroke-width="5"/>
+ <path d="M445 107l-9-20m38 19 10-20" stroke-width="8"/>
+</g>
+<!-- anvil -->
+<g filter="url(#rough)" stroke="#281e17" stroke-linejoin="round">
+ <path d="M199 286l-73-30 116-8 232-4 47 19-33 39-50 15-222-4z" fill="url(#edge)" stroke-width="7"/>
+ <path d="M220 312l225 5-27 48-4 40H239l-5-40z" fill="#6d523b" stroke-width="7"/>
+ <path d="M210 311h230l-7 24H222z" fill="#b58b5b" stroke-width="5"/>
+ <path d="M247 398h161l30 24 18 22H204l16-22z" fill="#9d734c" stroke-width="7"/>
+ <path d="M194 443h276v27H185z" fill="#b88959" stroke-width="6"/>
+ <path d="M239 340h172M240 366h169M221 431h226" stroke="#e0b477" stroke-opacity=".5" stroke-width="3"/>
+ <path d="M148 255l89 19 258-10" fill="none" stroke="#f4d29a" stroke-width="5" opacity=".7"/>
+</g>
+<g fill="#e5b576" opacity=".5">
+ <path d="M347 65l8 16-8-6-8 6zM145 263l12-6-3 9-9 4zM550 264l-12-6 3 9 9 4z"/>
+</g>
+</svg>
